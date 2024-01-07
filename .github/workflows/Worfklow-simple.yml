@@ -1,1 +1,18 @@
 
+name: hello-world
+on: push
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print bonjour
+        run: echo "Hello, World!"
+      - name: print comment va tu
+        run: echo "comment va-tu"
+  second-job:
+    runs-on: macos-latest
+    steps:
+      - name: print bien sur
+        run: echo "Bien, merci."
+     
+
